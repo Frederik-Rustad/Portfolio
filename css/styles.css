@@ -1,0 +1,30 @@
+
+header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+body {
+    margin-top: 200px;
+   
+}
+.nav-ul {
+    border: 2px solid red;
+    display: flex;
+    list-style: none;
+    float: right;
+}
+li {
+    padding: 1em;
+}
+section{
+    
+    
+}
+.profilePicture {
+    max-width: 200px;
+    border-radius: 50%;
+}
