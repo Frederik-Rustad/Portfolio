@@ -1,5 +1,11 @@
 @import "Hamburger.css";
 
+:root {
+    --Black: #000;
+    --White: #fff;
+    --title: Montserrat, sans-serif;
+}
+
 body,
 html {
     margin: 0;
@@ -9,43 +15,41 @@ html {
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 00;
+    font-weight: 800;
+    color: var(--Black);
 }
+
 
 
 /* Apply a black and white theme */
 body {
     background-color: #000;
     color: #fff;
-    font-family: Montserrat, sans-serif;
-    margin-left: 5rem;
+    font-family: var(--title);
 }
 
 /* Style the header and navigation */
 header {
-    background-color: #d80b0b;
-    padding: 20px;
+    background-color: var(--White);
     top: 0;
     left: 0;
     width: 100%;
 }
 
 
-main {
-    margin-top: 277px;
-    /* Adjust this value as needed to avoid content being hidden behind the fixed navigation */
-}
-
 /* Style the main content container */
 .container {
-    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
     margin: 0 auto;
     padding: 20px;
 }
 
 /* Style the sections */
 section {
-    margin-bottom: 20px;
+    row-gap: 1rem;
 }
 
 /* Style the profile picture */
@@ -54,19 +58,43 @@ section {
     border: 4px solid #fff;
     border-radius: 50%;
 }
-
-.projects {
+.skill-img {
+    max-width: 100px;
+}
+.skills, .projects {
+    background-color: var(--White);
+    color: var(--Black);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+.projects-list, .skills-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    list-style: none;
 }
 
 /* Style the form */
 .contact-form {
-    margin-bottom: 20px;
-    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    
 }
-
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+  }
+  
 form label {
     display: block;
     margin-bottom: 5px;
@@ -75,14 +103,21 @@ form label {
 
 input[type="text"],
 textarea {
-    width: 20vw;
+    width: 50%;
     padding: 10px;
     margin-bottom: 10px;
     margin-right: auto;
-    border: 2px solid #fff;
+    border: 4px solid #fff;
     background-color: transparent;
     color: #fff;
+    border-top-right-radius: 15px;
 }
+textarea
+{
+    height: 100px;
+    width: 100%;
+}
+
 
 input[type="submit"] {
     background-color: #fff;
@@ -90,7 +125,9 @@ input[type="submit"] {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    width: 150px;
 }
+
 
 /* Style the footer */
 footer {
