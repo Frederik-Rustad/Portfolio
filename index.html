@@ -1,85 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@200;400;600&display=swap"
+    rel="stylesheet">
 
-    <title>Portfolio Site</title>
+  <title>Portfolio Site</title>
 </head>
-  <body>
-    <!-- Header -->
-    <header> 
-      <h1>My Web Developer Portfolio</h1>
-      <div class="container">
-       
-        <!-- <nav>
-          <ul class="navbar">
-            
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <button class="hamburger-button">
-          <div class="bar"></div>
-        </button>
-      </div> -->
-    </header>
 
-    <!-- Main Content -->
-    <main>
-      <section>
-          <div class="container">
-            <img src="images/profilePicture.jpg" class="profilePicture" alt="Profile picture">
-            
-            <p>Hello, my name is Frederik and I'm a Front-end web developer.<br> I specialize in creating beautiful, responsive websites and web applications. <br> With a passion for creating modern, user-friendly experiences,<br> I'm always looking for new ways to build intuitive interfaces.
-             </p>
-        </section>
-        <section class="skills">
-          <h2>Languages & Skills</h2>
-          <ul class="skills-list">
-            <li><Img src="images/skills/html.png" alt="HTML" class="skill-img"></Img></li>
-            <li><img src="images/skills/css.png" alt="CSS" class="skill-img"></li>
-            <li><img src="images/skills/Javascript.png" alt="JavaScript" class="skill-img"></li>
-            <li><img src="images/skills/Figma.png" alt="Figma" class="skill-img"></li>
-            <li><img src="images/skills/Github.png" alt="GitHub" class="skill-img"></li>
-            <li><img src="images/skills/ps.png" alt="Photoshop" class="skill-img"></li>
-          </ul>
-        </section>
-        <section class="projects">
-          <h2>My Projects</h2>
-          <ul class="projects-list">
-            <li><a href="#"> <div class="card">Project 1 </div></a></li>
-            <li><a href="#">Project 2</a></li>
-            <li><a href="#">Project 3</a></li>
-          </ul>
-          
-        </section>
-        <section class="contact-form">
-          <form>
-            <h2>Contact Me</h2>
-            <label>Name:</label><br>
-            <input type="text" name="name" /><br>
-            <label>Email:</label><br>
-            <input type="text" name="email" /><br>
-            <label>Message:</label><br>
-            <textarea name="message"></textarea><br>
-            <input type="submit" value="Send" />
-          </form>
-        </section>
-      </div>
-    </main>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="greetings">
+    <h1>Hi I'm &lt;Frederik&gt; a Developer</h1>
+    <ul class="loader">
+      <li class="dots" id="dot-1"></li>
+      <li class="dots" id="dot-2"></li>
+      <li class="dots" id="dot-3"></li>
+    </ul>
+  </div>
+  </header>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <p>&copy; 2023 My Developer Portfolio Site. All Rights Reserved.</p>
+  <!-- Main Content -->
+  <main>
+    <section>
+      <div class="about-container">
+        <img src="images/profilePicture.jpg" class="profilePicture" alt="Profile picture">
+
+        <p>Hello, my name is Frederik and I'm a Front-end web developer.<br> I specialize in creating beautiful,
+          responsive websites and web applications. <br> With a passion for creating modern, user-friendly
+          experiences,<br> I'm always looking for new ways to build intuitive interfaces.
+        </p>
+    </section>
+    <section class="skills">
+      <h2>Languages & Skills</h2>
+      <ul class="skills-list">
+        <li><Img src="images/skills/html.png" alt="HTML" class="skill-img"></Img></li>
+        <li><img src="images/skills/css.png" alt="CSS" class="skill-img"></li>
+        <li><img src="images/skills/Javascript.png" alt="JavaScript" class="skill-img"></li>
+        <li><img src="images/skills/Figma.png" alt="Figma" class="skill-img"></li>
+        <li><img src="images/skills/Github.png" alt="GitHub" class="skill-img"></li>
+        <li><img src="images/skills/ps.png" alt="Photoshop" class="skill-img"></li>
+      </ul>
+    </section>
+    <section class="projects">
+      <h2>My Projects</h2>
+      <div class="projects-list">
+        
+          <div class="card">
+            <div class="card2">
+              <h3>RainyDays</h3>
+              <img src="images/p1ss.JPG" alt="Rainydays" class="project-img">
+              <p class="card-p">My journey through my first real project of making a web site. With all my trials and tribulations along the way from desing to consept. Rainydays is a Ecommerce web store page for Durable and confortable jackets.</p>
+              <a href="https://github.com/Frederik-Rustad/Cross-Course-project-RainyDays.git">GitHub Repo</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card2">
+              <h3>Community Sience Center</h3>
+              <img src="images/p2ss.JPG" alt="community sience center" class="project-img">
+              <p class="card-p">The project involves the creation of a website for a Community Science Center dedicated to educating and engaging younger kids in science-related activities and learning experiences. </p>
+              <a href="https://github.com/Frederik-Rustad/Community-Science-Museum.git">GitHub Repo</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card2">
+              <h3>Miniature Magic Blog</h3>
+              <img src="images/p3ss.JPG" alt="Miniature magic blog" class="project-img">
+              <p class="card-p">The project involves the creation of a blog website named "Miniature Magic," dedicated to the art of miniature painting. The main goal was to implement blogs dynamicly from wordpress to the site.</p>
+              <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-Frederik-Rustad.git">GitHub Repo</a>
+            </div>
+          </div>
       </div>
-    </footer>
-  </body>
+
+    </section>
+    <section class="contact-form">
+      <form>
+        <h2>Contact Me</h2>
+        <label>Name:</label><br>
+        <input type="text" name="name" /><br>
+        <label>Email:</label><br>
+        <input type="text" name="email" /><br>
+        <label>Message:</label><br>
+        <textarea name="message"></textarea><br>
+        <input type="submit" value="Send" />
+      </form>
+    </section>
+  </div>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 My Developer Portfolio Site. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
