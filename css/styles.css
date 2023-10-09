@@ -16,7 +16,6 @@ html {
     padding: 0;
 }
 
-
 body {
     background-color: var(--background);
     color: var(--text);
@@ -48,6 +47,10 @@ a {
     color: var(--text);
 }
 
+a:hover {
+    color: orange;
+}
+
 .profilePicture {
     max-width: 15vw;
     border: 5px solid var(--background);
@@ -61,6 +64,14 @@ a {
     background-color: var(--text);
     border-radius: 30%;
     border: 5px solid var(--text);
+    position: relative;
+}
+.skill-img:hover{
+    cursor: pointer;
+    animation: tilt 1s infinite alternate
+}
+.skill-img:hover::before {
+    opacity: 1;
 }
 
 .skills,
@@ -86,6 +97,7 @@ a {
     margin-top: 1rem;
     font-family: var(--background);
     font-weight: 600;
+    font-size: 1.3rem;
 }
 .projects{
     padding-bottom: 2rem;
@@ -103,7 +115,6 @@ a {
     align-items: center;
 }
 
-/* Style the form */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -154,20 +165,28 @@ input[type="submit"] {
 }
 
 
-/* Style the footer */
 footer {
     background-color: #000;
     text-align: center;
     padding: 10px 0;
 }
 
-/* Center the header text and navigation on small screens */
+@keyframes tilt {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+}
+
 @media screen and (max-width: 768px) {
     header h1 {
         text-align: center;
     }
 
-    nav {
-        text-align: center;
-    }
 }
+
