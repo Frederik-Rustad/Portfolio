@@ -39,3 +39,27 @@
  .card-p {
   max-width: 18rem;
  }
+ @media screen and (max-width: 500px) {
+  header h1 {
+      text-align: center;
+  }
+   
+  
+  .card {
+    width: 17rem;
+     
+  }
+  .card2 {
+    width: 17rem;
+     
+  }
+  .project-img {
+    width: 16rem;
+    height: auto;
+    
+   }
+   .card-p {
+    max-width: 16rem;
+   }
+
+}

@@ -7,7 +7,7 @@
     --text: #fff;
     --title: Montserrat, sans-serif;
     --box-shadow: -10px 10px 12px #1d1c1c;
-   
+
 }
 
 body,
@@ -40,9 +40,11 @@ header h1 {
     color: var(--text);
     padding: 10px;
 }
+
 h2 {
     padding-left: 1rem;
 }
+
 a {
     color: var(--text);
 }
@@ -66,10 +68,12 @@ a:hover {
     border: 5px solid var(--text);
     position: relative;
 }
-.skill-img:hover{
+
+.skill-img:hover {
     cursor: pointer;
     animation: tilt 1s infinite alternate
 }
+
 .skill-img:hover::before {
     opacity: 1;
 }
@@ -99,7 +103,8 @@ a:hover {
     font-weight: 600;
     font-size: 1.3rem;
 }
-.projects{
+
+.projects {
     padding-bottom: 2rem;
 }
 
@@ -110,8 +115,9 @@ a:hover {
     justify-content: space-evenly;
     list-style: none;
 }
-.projects-list{
-    
+
+.projects-list {
+
     align-items: center;
 }
 
@@ -172,21 +178,44 @@ footer {
 }
 
 @keyframes tilt {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: rotate(0deg);
     }
+
     25% {
         transform: rotate(15deg);
     }
+
     75% {
         transform: rotate(-15deg);
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
     header h1 {
         text-align: center;
     }
+    .greetings {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-wrap: balance;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .profilePicture {
+        max-width: 50vw;
+    }
+
+    .intro-text {
+        max-width: 16rem;
+    }
 
 }
-
