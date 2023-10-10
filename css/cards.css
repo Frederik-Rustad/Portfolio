@@ -10,7 +10,7 @@
  .card2 {
   width: auto;
   height: 25rem;
-  background-color: var(--background);  
+  background-color: var(--card-background);  
   transition: all .2s;
   border-radius: 5px;
   display: flex;
