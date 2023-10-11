@@ -2,9 +2,9 @@
 @import"cards.css";
 
 :root {
-    --card-background: #333131;
+    --card-background: #0b0b0b;
     --background: url('../images/background.svg') no-repeat;
-    --sections: #0e0e0e;
+    --sections: #252525;
     --text: #fff;
     --title: Montserrat, sans-serif;
     --box-shadow: -10px 10px 12px #1d1c1c;
@@ -24,6 +24,7 @@ body {
     color: var(--text);
     font-family: var(--title);
 }
+
 
 .greetings {
     display: flex;
@@ -85,7 +86,8 @@ a:hover {
 
 .skills,
 .projects,
-.about-container {
+.about-container,
+.contact {
     background-color: var(--sections);
     color: var(--text);
     width: 80%;
@@ -114,7 +116,8 @@ a:hover {
 }
 
 .projects-list,
-.skills-list {
+.skills-list, 
+.contact {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -125,13 +128,20 @@ a:hover {
 
     align-items: center;
 }
+.contact {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.contact :first-child {
+   align-self: flex-start;
+}
 
 .contact-form {
     display: flex;
     flex-direction: column;
     margin: auto;
     width: 80%;
-
 }
 
 form {
@@ -155,7 +165,7 @@ textarea {
     margin-bottom: 10px;
     margin-right: auto;
     border: 4px solid #fff;
-    background-color: transparent;
+    background-color: var(--sections);
     color: #fff;
     border-top-right-radius: 15px;
 }
@@ -178,6 +188,12 @@ footer {
     background-color: #000;
     text-align: center;
     padding: 10px 0;
+}
+
+.skills,
+.projects,
+.contact-form {
+ margin-top: 3rem;
 }
 
 @keyframes spin {

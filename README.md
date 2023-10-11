@@ -1,3 +1,52 @@
+# FredDev-Portfolio 
+
+
+[Freddev-portfolio](https://freddev-portfolio.netlify.app/)
+
+My journey through my first Portfolio With all my trials and tribulations along the way from desing to consept.
+
+
+## Description
+
+I specialize in creating beautiful, responsive websites.
+With a passion for creating modern, user-friendly experiences,
+I'm always looking for new ways to build intuitive interfaces.
+As demonstrated here, I higly enjoy the animation possibilities with CSS.
+
+I'm a hobby photagrapher and a painter in my free time.
+With an education in Service Electronics and a background in the service industry.
+
+## Website Design and Layout:
+
+- Create an intuitive and user-friendly website layout that provides easy navigation.
+- Choose a color scheme and design elements that resonate with me.
+- Ensure that the website is responsive and accessible on various devices (desktop, tablet, mobile).
+
+## Sections:
+
+- Organize my skills and information into sections (e.g., skills, projects, contact me).
+- Include animations and descriptions for some extra flavor and whimsy.
+
+
+# Buuilt with
+
+- Html
+- CSS
+
+
+## GitHub
+
+```
+https://github.com/Frederik-Rustad/Portfolio.git
+```
+
+ ## Contributing
+
+ ## Contact
+[My Twitter page](https://twitter.com/Penrose_Studio)
+
+[Frerus50251@stud.noroff.no](Frerus50251@stud.noroff.no)
+
 # Portfolio
 My Portfolio page
 
